@@ -7,13 +7,16 @@ This project follows the Repository Pattern and Clean Architecture principles to
 
 1. Clone the `env.template` file and rename it to `.env`.
 2. Configure the environment variables in the `.env` file according to your setup.
+3. Build the databases 
+  ```
+  docker compose up
+  ```
 
 ### Project Structure
 
 The project is organized as follows:
 
 - **Domain**: Contains the core business logic and entities.
-- **Application**: Includes use cases and service interfaces.
 - **Infrastructure**: Handles external concerns like database access and API integrations.
 - **Presentation**: Manages the user interface.
 
