@@ -9,7 +9,11 @@ This project follows the Repository Pattern and Clean Architecture principles to
 2. Configure the environment variables in the `.env` file according to your setup.
 3. Build the databases 
   ```
-  docker compose up
+  docker compose up -d
+  ```
+4. Generate prisma client and sync database
+  ```
+  npx prisma migrate dev
   ```
 
 ### Project Structure
